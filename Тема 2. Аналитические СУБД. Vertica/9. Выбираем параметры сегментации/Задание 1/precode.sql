@@ -1,5 +1,5 @@
 Прекод
-create table dialogs
+create table STV2025032024.dialogs
 (
     message_id   int PRIMARY KEY,
     message_ts   timestamp(6),
@@ -8,4 +8,4 @@ create table dialogs
     message varchar(1000),
     message_type varchar(100)
 )
-SEGMENTED BY hash(ХХХХ) all nodes
+SEGMENTED BY hash(message_id) all nodes
